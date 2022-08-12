@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    margin: 10px 0;
+}
+
+.container {
+    background: var(--Light-Gray);
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.head {
+    width: 40%;
+    margin: 1rem auto;
+    text-align: center;
+}
+#firsthead {
+    color: var(--Dark-Blue);
+    font-weight: 200;
+}
+#secondhead {
+    color: var(--Dark-Blue);
+    font-weight: 600;
+}
+
+.feature-cards {
+    width: 80%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.card {
+    margin: 15px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-weight: 600;
+    margin: 10px 0;
+    color: var(--Dark-Blue);
+}
+
+.card img {
+    position: relative;
+    left: 70%;
+    margin-top: 15px;
+}
+
+#supervisor {
+    border-top: 4px solid var(--Cyan);
+}
+#team {
+    border-top: 4px solid var(--Red);
+}
+#karma {
+    border-top: 4px solid var(--Orange);
+    margin-top: 20px;
+}
+#calculator {
+    border-top: 4px solid var(--Blue);
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 2rem 0;
+    }
+    
+    .head {
+        width: 85%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    #firsthead, #secondhead {
+        font-size: 1.57rem;
+    }
+
+    .feature-cards {
+        width: 85%;
+        grid-template-columns: 1fr;
+    }
+}
